@@ -1,0 +1,117 @@
+body {
+  background-image: url("/img/background.jpeg");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(27, 2, 2, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact list styles */
+ul#contacts li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  margin-left: 235px;
+  width: 800px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul#contacts li:hover {
+  background-color: #868080;
+}
+
+/* Form styles */
+#new-contact {
+  background-color: gray;
+  width: 500px;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #0056b3;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: blue;
+}
+
+/* Contact details display */
+#show-contact {
+  display: none;
+  background-image: url("/img/cover.jpeg");
+  background-size: cover;
+  margin-top: 50px;
+  width: 500px;
+  padding: 20px;
+  color: blue;
+  font-size: larger;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-contact {
+  background-color: #ff5555;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-contact:hover {
+  background-color: #ff0000;
+}
