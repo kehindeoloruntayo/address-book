@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.6.4.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="icon" href="/img/logo.jpeg">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Address book</title>
+</head>
+
+<body>
+  <div class="container">
+    <form id="new-contact">
+      <div class="logo">
+        <img src="./img/logo.jpeg" alt="logo">
+      </div>
+      <div class="form-group">
+        <label for="fullname">Full Name of Contact:</label>
+        <input id="fullname" class="form-control" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Contact Address:</label>
+        <input id="address" class="form-control" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input id="email" class="form-control" type="email" required>
+      </div>
+      <div class="form-group">
+        <label for="number">Mobile Number:</label>
+        <input id="number" class="form-control" type="tel" required>
+      </div>
+      <button type="submit" class="btn">Add Contact</button>
+    </form>
+
+    <div id="show-contact">
+      <h2>Contact Information</h2>
+      <p>Full Name: <span class="full-name"></span></p>
+      <p>Contact Address: <span class="home-address"></span></p>
+      <p>Email Address: <span class="email-address"></span></p>
+      <p>Mobile Number: <span class="mobile-number"></span></p>
+      <div id="buttons">
+      </div>
+    </div>
+  </div>
+  <ul id="contacts"></ul>
+  </div>
+</body>
+
+</html>
